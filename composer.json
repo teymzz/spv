@@ -1,0 +1,23 @@
+{
+    "name": "spv/mi",
+    "description": "PHP Framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akinola Saheed",
+            "email": "teymss@gmail.com",
+            "role": "Web Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "spv\\mi\\": "./"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "pelago/emogrifier": "^6.0",
+        "phpmailer/phpmailer": "^6.6"
+    }
+}
