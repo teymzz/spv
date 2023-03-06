@@ -15,9 +15,5 @@
             "spv\\mi\\": "./"
         }
     },
-    "minimum-stability": "dev",
-    "require": {
-        "pelago/emogrifier": "^6.0",
-        "phpmailer/phpmailer": "^6.6"
-    }
+    "minimum-stability": "dev"
 }
