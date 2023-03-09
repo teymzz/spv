@@ -20,7 +20,11 @@ class Spv {
                 $FileManager->deleteFile($dir);
     
             }
+
+        }elseif(is_dir('./core/spoova')){
             
+            include_once "core\spoova.php";
+
         }
 
 
