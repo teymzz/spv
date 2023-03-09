@@ -18,7 +18,7 @@ class Spv {
     
             $FileManager->setUrl($dir.'/mi');
     
-            if($FileManager->moveContentsTo('./', ['vendor'])){
+            if($FileManager->moveContentsTo('./', ['vendor', 'mi'])){
     
                 $FileManager->deleteFile($dir);
     
