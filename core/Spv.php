@@ -5,19 +5,24 @@ use spv\mi\core\classes\FileManager;
 
 class Spv {
 
-    static function install(){
+    static function init(){
 
-        $FileManager = new FileManager;
+        $dir = './vendor/spv';
 
-        $FileManager->setUrl('./vendor/spv/mi/');
-
-        if($FileManager->moveContentsTo('./', ['vendor'])){
-
-            //$FileManager->deleteFile('vendor/');
-            //shell_exec('composer dump-autoload -o');
-            //delete the vendor file
-
+        if(is_dir($dir)){
+            
+            $FileManager = new FileManager;
+    
+            $FileManager->setUrl($dir.'/mi');
+    
+            if($FileManager->moveContentsTo('./', ['vendor'])){
+    
+                $FileManager->deleteFile($dir);
+    
+            }
+            
         }
+
 
     }
 

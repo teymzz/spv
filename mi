@@ -1,4 +1,6 @@
 #!/usr/bin/php
 <?php
 
-include_once "core\spoova.php";
+require_once "vendor/autoload.php";
+
+spv\mi\core\Spv::init();
