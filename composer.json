@@ -23,5 +23,5 @@
             "spv\\mi\\": "./"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
