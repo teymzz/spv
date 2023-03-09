@@ -1106,8 +1106,6 @@ class FileManager extends Enlist{
       $contents = $this->getContents(false);
       $valids = [];
 
-      print_r($contents);
-
       array_map(function($content) use(&$valids, $ignore) {
 
         if(!in_array($content, $ignore)) $valids[] = $content;
@@ -1119,6 +1117,8 @@ class FileManager extends Enlist{
       $moved = [];
 
       foreach($contents as $content){
+
+        print $content." : ". $newdir.PHP_EOL;
 
         if(!in_array($content, $ignore) && $this->move($content, $newdir)) {
           $moved[] = $content;
