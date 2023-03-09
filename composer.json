@@ -1,8 +1,11 @@
 {
     "name": "spv/mi",
     "description": "PHP Framework",
-    "type": "project",
     "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=8.1.0"
+    },
     "authors": [
         {
             "name": "Akinola Saheed",
