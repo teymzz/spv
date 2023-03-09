@@ -10,6 +10,11 @@
             "role": "Web Developer"
         }
     ],
+    "scripts": {
+        "post-autoload-dump": [
+            "php mi"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "spv\\mi\\": "./"
