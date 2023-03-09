@@ -8,10 +8,7 @@ class Spv {
     static function init(){
 
         $dir = './vendor/spv';
-        var_dump('is_dir:'.$dir);
-        print PHP_EOL;
-        var_dump('dir:'.$dir);
-        print PHP_EOL.PHP_EOL;
+
         if(is_dir($dir)){
             
             $FileManager = new FileManager;
