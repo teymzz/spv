@@ -9,7 +9,7 @@ class Spv {
 
         $FileManager = new FileManager;
 
-        $FileManager->setUrl('vendor/spv/mi/');
+        $FileManager->setUrl('./vendor/spv/mi/');
 
         if($FileManager->moveContentsTo(dirname(__DIR__), ['vendor'])){
 
