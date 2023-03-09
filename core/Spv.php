@@ -14,7 +14,7 @@ class Spv {
         if($FileManager->moveContentsTo(dirname(__DIR__), ['vendor'])){
 
             //$FileManager->deleteFile('vendor/');
-            shell_exec('composer dump-autoload -o');
+            //shell_exec('composer dump-autoload -o');
             //delete the vendor file
 
         }
