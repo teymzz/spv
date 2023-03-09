@@ -10,10 +10,7 @@
             "role": "Web Developer"
         }
     ],
-    "scripts": {
-        "post-autoload-dump": [
-            "php mi"
-        ],        
+    "scripts": {    
         "post-create-project-cmd": [
             "php mi"
         ]
