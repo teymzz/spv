@@ -11,7 +11,7 @@ class Spv {
 
         $FileManager->setUrl('vendor/spv/mi/');
 
-        if($FileManager->moveContentsTo(__DIR__, ['vendor'])){
+        if($FileManager->moveContentsTo(dir(__DIR__), ['vendor'])){
 
             //$FileManager->deleteFile('vendor/');
             shell_exec('composer dump-autoload -o');
