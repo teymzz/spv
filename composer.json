@@ -13,6 +13,9 @@
     "scripts": {
         "post-autoload-dump": [
             "php mi"
+        ],        
+        "post-create-project-cmd": [
+            "php mi"
         ]
     },
     "autoload": {
