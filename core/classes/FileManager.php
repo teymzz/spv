@@ -1079,11 +1079,8 @@ class FileManager extends Enlist{
         $this->error = ('destination path "'.$newDir.'" is not writeable');
         return $this;
       }
-      print $this->lastDir.PHP_EOL;
-      print $newDir;
-      print (strtolower($this->lastDir) !== strtolower($newDir));
+
       if(!is_file($newDir) && (strtolower($this->lastDir) !== strtolower($newDir))){
-        print "hey";
         rename($this->lastDir, $newDir);
       }else{
         $this->error = ('destination path "'.$newDir.'" already exists');
@@ -1117,8 +1114,6 @@ class FileManager extends Enlist{
       $moved = [];
 
       foreach($contents as $content){
-
-        print $content." : ". $newdir.PHP_EOL;
 
         if(!in_array($content, $ignore) && $this->move($content, $newdir)) {
           $moved[] = $content;
