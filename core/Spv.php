@@ -16,9 +16,6 @@ class Spv {
             if($FileManager->moveContentsTo('./', ['vendor', 'mi', 'composer.json'])){
     
                 $FileManager->deleteFile($dir);
-
-                shell_exec('composer dump-autoload -o');
-                exit();
     
             }
 
