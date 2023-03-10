@@ -2,6 +2,7 @@
 
 namespace spv\mi\core;
 use spv\mi\core\classes\FileManager;
+use spv\mi\core\commands\Cli;
 
 class Spv {
 
@@ -16,6 +17,8 @@ class Spv {
             if($FileManager->moveContentsTo('./', ['vendor', 'mi'])){
     
                 $FileManager->deleteFile($dir);
+
+                Cli::shell('composer dump-autoload -o');
     
             }
 

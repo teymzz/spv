@@ -926,6 +926,12 @@ class Cli
         return self::$prompt['maximum'] ?? false;
     }
 
+    public static function shell(string $command) {
+
+        shell_exec($command);
+
+    }
+
 
     /**
      * Clears cursor back in the number of times defined
