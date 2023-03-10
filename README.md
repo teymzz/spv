@@ -13,11 +13,11 @@ Reusable components, Static Resource Handler, ORM (beta) and FileManager tool.
     > create a file named "mi" in a folder and add the following command 
   
     ```php
-        <?php
+    <?php
 
-        require_once "vendor/autoload.php";
+    require_once "vendor/autoload.php";
 
-        spv\mi\core\Spv::init();
+    spv\mi\core\Spv::init();
     ```
 
     > Add the _composer.json_ file with the following json sample syntax and using the spoova version required
