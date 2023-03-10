@@ -18,6 +18,7 @@ class Spv {
                 $FileManager->deleteFile($dir);
 
                 shell_exec('composer dump-autoload -o');
+                exit();
     
             }
 
