@@ -13,7 +13,6 @@ Reusable components, Static Resource Handler, ORM (beta) and FileManager tool.
     > create a file named "mi" in a folder and add the following command 
   
     ```php
-        #!/usr/bin/php
         <?php
 
         require_once "vendor/autoload.php";
