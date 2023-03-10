@@ -1,6 +1,7 @@
 {
     "name": "spv/mi",
-    "description": "PHP Framework",
+    "description": "Spoova Framework",
+    "keywords": ["framework", "spoova"],
     "license": "MIT",
     "type": "project",
     "authors": [

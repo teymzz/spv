@@ -13,7 +13,7 @@ class Spv {
     
             $FileManager->setUrl($dir.'/mi');
     
-            if($FileManager->moveContentsTo('./', ['vendor', 'mi'])){
+            if($FileManager->moveContentsTo('./', ['vendor', 'mi', 'composer.json'])){
     
                 $FileManager->deleteFile($dir);
 
