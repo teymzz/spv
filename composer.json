@@ -12,9 +12,6 @@
     ],
     "scripts": {
         "post-autoload-dump": [
-            "php mi", "composer dump-autoload -o"
-        ],        
-        "post-create-project-cmd": [
             "php mi"
         ]
     },
