@@ -30,7 +30,12 @@ Reusable components, Static Resource Handler, ORM (beta) and FileManager tool.
         "type": "project",
         "license": "MIT",
         "require": {
-            "spoova/mi": "^1.0"
+            "spv/mi": "^1.0"
+        },
+        "autoload": {
+            "psr-4": {
+                "spv\\mi\\": "./"
+            }
         },    
         "scripts": {
             "post-autoload-dump": [
@@ -46,12 +51,6 @@ Reusable components, Static Resource Handler, ORM (beta) and FileManager tool.
     ```sh
     composer require spoova/mi
     ``` 
-
-    > Lastly, run the command below to get started
-    
-    ```sh
-    composer dump-autoload -o
-    ```
 
 3. Once the project package installer is successfully installed on desktop devices, open the newly created pack in a code editor's terminal and run the command below to create a new separate project application.
 
