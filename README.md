@@ -10,7 +10,7 @@ Reusable components, Static Resource Handler, ORM (beta) and FileManager tool.
 
 2. If the project pack will be downloaded from [packagist](https://packagist.org/packages/spv/mi), you need to add the mi project package installer file into a project pack root along with the _composer.json_ file. This can be done by following the steps below: 
 
-    > create a file named "mi" in a folder and add the following command 
+    > create a file named "mi" in a folder and add the following code 
   
     ```php
     <?php
@@ -48,7 +48,7 @@ Reusable components, Static Resource Handler, ORM (beta) and FileManager tool.
     > Run the command
     
     ```sh
-    composer require spoova/mi
+    composer require spv/mi
     ``` 
 
 3. Once the project package installer is successfully installed on desktop devices, open the newly created pack in a code editor's terminal and run the command below to create a new separate project application.
